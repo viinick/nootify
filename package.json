@@ -1,0 +1,45 @@
+{
+
+"name": "nootify",
+
+"version": "1.0.0",
+
+"description": "node app ",
+
+"main": "index.js",
+
+"scripts": {
+
+"start": "node index.js"
+
+},
+
+  "dependencies": {
+
+ "express": "4.13.4",
+
+ "socket.io":"2.0"
+
+ },
+
+"repository": {
+
+"type": "git",
+
+"url": ""
+
+},
+
+"author": "",
+
+"license": "ISC",
+
+"bugs": {
+
+"url": ""
+
+},
+
+"homepage": ""
+
+}
