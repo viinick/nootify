@@ -6,11 +6,11 @@
 
 "description": "node app ",
 
-"main": "index.js",
+"main": "server.js",
 
 "scripts": {
 
-"start": "node index.js"
+"start": "node server.js"
 
 },
 
