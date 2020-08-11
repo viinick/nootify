@@ -1,0 +1,54 @@
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chat</title>
+    <style>
+	/*
+      canvas {
+        width: 800px;
+        height: 600px;
+        border: 5px solid black;
+      }*/
+	  #userDiv{z-index: 5;}
+	  #sendDiv{display: block; position: absolute; right:1px; left: 1px; bottom: 0px; width: 100%; background: #eee;}
+	  #btsend{position: absolute; right: 3px; bottom: 6px; width: 10%; height: 40px; border-radius: 60px; background: #eee; border: 1px solid grey}
+	  #msgtx{position: absolute; right: 2px; left: 2px; bottom: 2px;width: 88%;height: 50px; border: 1px solid grey; resize: none}
+      
+      #chatDiv{display: none;position: fixed; top: 1px;right: 1px; left: 1px; bottom: 1px; border: 1px solid grey}
+      #tituloChatDiv{padding-left: 10px;background:#afa}
+      #tituloContatosDiv{text-align:right;background:#bff}
+      #contatosDiv{display: none;position: fixed; top: 1px; right: 1px; left: 70%;bottom: 1px;border: 1px solid grey}
+
+    </style>
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <!--<canvas id="canvas"></canvas><br>-->
+<h4 id="txtlog"></h4><br><br>
+
+<div id="userDiv">
+<center>
+<h3>Entrar</h3><br>
+<input type="text" id="usrtx"><br>
+<input type="button" id="btent" value = "Entrar" onclick="enter()">
+</center>
+</div>
+
+<div id="chatDiv">
+<div id="tituloChatDiv">Chat em grupo</div>
+<div id="msgsDiv"></div>
+<div id="myDIV">
+
+</div>
+<div id="sendDiv">
+<textarea id="msgtx"></textarea>
+<input type="button" id="btsend" value = ">" onclick="sendMsg()">
+</div>
+</div>
+
+<div id="contatosDiv">
+<div id="tituloContatosDiv">Contatos</div>
+</div>
+  </body>
+  <script src="/static/script.js"></script>
+</html>
